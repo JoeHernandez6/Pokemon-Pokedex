@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <h1>My Pokedex</h1>
 
-      {/* 🔥 THIS is what was missing */}
+      {}
       <SearchBar onSearch={fetchPokemon} />
 
       {error && <p style={{ color: "red" }}>{error}</p>}
