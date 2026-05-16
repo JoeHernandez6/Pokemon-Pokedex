@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { SearchBar, PokeStats, PokeDisplay, PokemonCard } from './components/index';
+import { SearchBar, PokeDisplay } from './components/index';
 
 function App() {
   const [pokemon, setPokemon] = useState(null)
@@ -23,12 +23,13 @@ function App() {
     <div className="App">
       <h1>My Pokedex</h1>
 
-      {}
       <SearchBar onSearch={fetchPokemon} />
 
       {error && <p style={{ color: "red" }}>{error}</p>}
 
-      {pokemon && <PokemonCard pokemon={pokemon} />}
+      {pokemon && (
+        <PokeDisplay pokemon={pokemon} />
+      )}
     </div>
   )
 }

@@ -5,3 +5,10 @@
   font-family: sans-serif;
 }
 
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+  text-align: center; /* ⬅️ this centers the h1 and inline elements */
+}

@@ -1,0 +1,14 @@
+.search-container {
+  display: flex;
+  justify-content: center; 
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.search-container input {
+  padding: 0.5rem;
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+}
