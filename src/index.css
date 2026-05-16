@@ -1,0 +1,30 @@
+:root {
+  /* Your brand colors */
+  --primary: #3b82f6; 
+  --bg: #ffffff;
+  --text: #1f2937;
+
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* Automatic Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #f9fafb;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%; /* Makes your app full-width */
+}
